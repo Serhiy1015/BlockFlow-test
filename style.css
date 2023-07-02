@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+}
+.close-menu {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    -top: 2%;
+    display: flex;
+}
+
+.leftbar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-top: 2%;
+}
+
+.leftbar-top {
+    height: 87vh;
+    gap: 24px;
+}
+
+.leftbar-top,
+.leftbar-bottom {
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftbar-top div,
+.leftbar-bottom div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 80%;
+    padding: 2%;
+}
+
+.leftbar img {
+    width: 18px;
+}
+
+.leftbar h3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.leftbar-top div:hover,
+.leftbar-bottom div:hover {
+    background-color: #1fc0ad3d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mainbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: #F6F7FA;
+}
+
+.mainbar-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.states {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.states-item {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.states-item span {
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    z-index: 3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.states-line {
+    width: 130px;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.536) 50%, transparent 0);
+    background-size: 10px .2px;
+    position: relative;
+    left: 10px;
+    bottom: 8px;
+}
+
+.states-light-line {
+    width: 130px;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.066) 50%, transparent 0);
+    background-size: 10px .2px;
+    position: relative;
+    left: 10px;
+    bottom: 8px;
+}
+
+.div {
+    width: 130px;
+
+}
+
+/* .state5 {
+    margin-left: 130px;
+} */
+
+.mainbar h1 {
+    margin-top: 2%;
+}
+
+hr {
+    margin: 5px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #EAECF0;
+}
+
+.state1,
+.state2 {
+    background-color: #1FC0AE;
+}
+
+.state3,
+.state4,
+.state5 {
+    background-color: #EAECF0;
+}
+
+.mainbar-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 85%;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.info,
+.we-are-here {
+    width: 390px;
+    height: 131px;
+    padding: 2%;
+}
+
+.info,
+.we-are-here,
+.pre-order {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h3 {
+    color: #1B1B1B;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.info div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.info h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info p {
+    color: #8E99AB;
+}
+
+.we-are-here {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.text h1 {
+    color: #1FC0AE;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.text p {
+    color: #1FC0AE;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.we-are-here img {
+    width: 109px;
+    height: 70px;
+}
+
+.pre-order {
+    display: flex;
+    flex-direction: column;
+    width: 845px;
+    height: 235px;
+    padding: 2%;
+}
+
+.pre-order h3 {
+    font-size: 20px;
+    color: #1B1B1B;
+    margin-bottom: 30px;
+}
+
+.pre-order small {
+    color: #8E99AB;
+    font-size: 12px;
+}
+
+.pre-order div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+select {
+    outline: 0;
+    border: 0;
+    height: 40px;
+    background-color: #F6F7FA;
+    border-radius: 7px;
+    padding-right: 5%;
+}
+
+option {
+    padding: 5%;
+}
+
+form {
+    position: relative;
+}
+
+input {
+    width: 88px;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #1FC0AE;
+    color: #EAECF0;
+    border: 0;
+    position: absolute;
+    right: 0;
+}
+
+input:hover {
+    background: #156b61;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .states-line,
+    .states-light-line,
+    .div {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .states-line,
+    .states-light-line,
+    .div {
+        width: 40px;
+        position: relative;
+        left: 3px;
+    }
+
+    .states-item span {
+        width: 55px;
+        height: 55px;
+    }
+
+    .leftbar {
+        position: absolute;
+        left: -300px;
+    }
+
+    .mainbar {
+        width: 100%;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .active-bar {
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        background-color: #EAECF0;
+        height: 100vh;
+        margin-top: 0;
+        padding-top: 15px;
+        width: 35%;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.258);
+        z-index: 9;
+        position: fixed;
+        display: none;
+    }
+
+    .close-menu {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+
+    .states-line,
+    .states-light-line,
+    .div {
+        width: 65px;
+        position: relative;
+        left: 3px;
+    }
+
+
+    .leftbar h3 {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+    .states-line,
+    .states-light-line,
+    .div {
+        width: 20px;
+    }
+    .active-bar{
+        width: 50%;
+    }
+    .wrapper{
+        padding-bottom: 100px;
+    }
+}
